@@ -1,6 +1,7 @@
 {
   "item.tutorialmod.rock": "Rock",
   "item.tutorialmod.rock_powder": "Rock Powder",
+  "item.tutorialmod.amber": "Amber",
 
   "block.tutorialmod.amber_block": "Block of Amber",
   "block.tutorialmod.amber_ore": "Amber Ore"

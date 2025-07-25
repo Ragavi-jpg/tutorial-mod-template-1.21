@@ -12,7 +12,7 @@ public class ModItems {
     //items
     public static final Item ROCK = registerItem("rock", new Item(new Item.Settings()));
     public static final Item ROCK_POWDER = registerItem("rock_powder", new Item(new Item.Settings()));
-
+    public static final Item AMBER = registerItem("amber", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
@@ -24,6 +24,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries ->{
             entries.add(ROCK);
             entries.add(ROCK_POWDER);
+            entries.add(AMBER);
         } );
     }
 }
