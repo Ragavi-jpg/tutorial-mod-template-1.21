@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "tutorialmod",
-	"version": "${version}",
+	"version": "0.6",
 	"name": "Tutorial Mod",
 	"description": "This is a potato",
 	"authors": [
@@ -9,9 +9,9 @@
 	],
 	"contact": {
 		"homepage": "https://???",
-		"sources": "https://github.com/???"
+		"sources": "https://github.com/Ragavi-jpg/tutorial-mod-template-1.21"
 	},
-	"license": "???",
+	"license": "MIT",
 	"icon": "assets/tutorialmod/icon.png",
 	"environment": "*",
 	"entrypoints": {
