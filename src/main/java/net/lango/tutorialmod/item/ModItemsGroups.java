@@ -19,6 +19,8 @@ public class ModItemsGroups {
                         entries.add(ModItems.AMBER);
                         entries.add(ModItems.ROCK);
                         entries.add(ModItems.ROCK_POWDER);
+
+                        entries.add(ModItems.CHISEL);
                     }).build());
 
     public static final ItemGroup IDK_BLOCKS = Registry.register(Registries.ITEM_GROUP,
@@ -28,6 +30,7 @@ public class ModItemsGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.AMBER_BLOCK);
                         entries.add(ModBlocks.AMBER_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_AMBER_ORE);
                     }).build());
 
 

@@ -3,8 +3,11 @@
   "item.tutorialmod.rock_powder": "Rock Powder",
   "item.tutorialmod.amber": "Amber",
 
+  "item.tutorialmod.chisel": "Chisel",
+
   "block.tutorialmod.amber_block": "Block of Amber",
   "block.tutorialmod.amber_ore": "Amber Ore",
+  "block.tutorialmod.deepslate_amber_ore": "Deepslate Amber Ore",
 
   "itemgroup.tutorialmod.idk_items": "IDK Items",
   "itemgroup.tutorialmod.idk_blocks": "IDK Blocks"

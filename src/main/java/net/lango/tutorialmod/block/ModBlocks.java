@@ -10,25 +10,35 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     //blocks
     public static final Block AMBER_BLOCK = registerBlock("amber_block",
-            new IceBlock(AbstractBlock.Settings.create()
+            new Block(AbstractBlock.Settings.create()
                     .strength(0.5f)
-                    .requiresTool()
                     .sounds(BlockSoundGroup.CANDLE)
                     .nonOpaque()
-                    .solidBlock(Blocks::never)
-                    .mapColor(MapColor.GOLD)
+                    .mapColor(MapColor.ORANGE)
             ));
 
     public static final Block AMBER_ORE = registerBlock("amber_ore",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(1.2f)
+            new ExperienceDroppingBlock(UniformIntProvider.create(2,5), AbstractBlock.Settings.create()
+                    .strength(1f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.STONE)
+                    .mapColor(MapColor.ORANGE)
             ));
+
+    public static final Block DEEPSLATE_AMBER_ORE = registerBlock("deepslate_amber_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2,5), AbstractBlock.Settings.create()
+                    .strength(1f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.DEEPSLATE)
+                    .mapColor(MapColor.ORANGE)
+            ));
+
+
 
     //============================================================================
     private static Block registerBlock(String name, Block block){
@@ -43,9 +53,9 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         TutorialMod.LOGGER.info("Registering Mod Blocks for " + TutorialMod.MOD_ID);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+        /*ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
            entries.add(ModBlocks.AMBER_BLOCK);
            entries.add(ModBlocks.AMBER_ORE);
-        });
+        }); */
     }
 }
