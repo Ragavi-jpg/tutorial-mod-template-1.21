@@ -31,6 +31,7 @@ public class ModItemsGroups {
                         entries.add(ModBlocks.AMBER_BLOCK);
                         entries.add(ModBlocks.AMBER_ORE);
                         entries.add(ModBlocks.DEEPSLATE_AMBER_ORE);
+                        entries.add(ModBlocks.MAGIC_BLOCK);
                     }).build());
 
 

@@ -9,6 +9,8 @@
   "block.tutorialmod.amber_ore": "Amber Ore",
   "block.tutorialmod.deepslate_amber_ore": "Deepslate Amber Ore",
 
+  "block.tutorialmod.magic_block": "Magic Block",
+
   "itemgroup.tutorialmod.idk_items": "IDK Items",
   "itemgroup.tutorialmod.idk_blocks": "IDK Blocks"
 }

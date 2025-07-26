@@ -2,6 +2,7 @@ package net.lango.tutorialmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lango.tutorialmod.TutorialMod;
+import net.lango.tutorialmod.block.custom.MagicBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -38,7 +39,12 @@ public class ModBlocks {
                     .mapColor(MapColor.ORANGE)
             ));
 
-
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
+            new MagicBlock(AbstractBlock.Settings.create()
+                    .strength(1f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.HEAVY_CORE)
+            ));
 
     //============================================================================
     private static Block registerBlock(String name, Block block){
