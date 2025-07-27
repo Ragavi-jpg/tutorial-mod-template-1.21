@@ -32,9 +32,25 @@ public class ModItemsGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.AMBER_BLOCK))
                     .displayName(Text.translatable("itemgroup.tutorialmod.idk_blocks"))
                     .entries((displayContext, entries) -> {
+                        //=====AMBER VARIATIONS======================
                         entries.add(ModBlocks.AMBER_BLOCK);
+
+                        entries.add(ModBlocks.AMBER_SLAB);
+                        entries.add(ModBlocks.AMBER_STAIRS);
+                        entries.add(ModBlocks.AMBER_WALL);
+                        entries.add(ModBlocks.AMBER_FENCE);
+
+                        entries.add(ModBlocks.AMBER_TRAPDOOR);
+                        entries.add(ModBlocks.AMBER_DOOR);
+                        entries.add(ModBlocks.AMBER_FENCE_GATE);
+
+                        entries.add(ModBlocks.AMBER_PRESSURE_PLATE);
+                        entries.add(ModBlocks.AMBER_BUTOON);
+                        //============================================
+
                         entries.add(ModBlocks.AMBER_ORE);
                         entries.add(ModBlocks.DEEPSLATE_AMBER_ORE);
+
                         entries.add(ModBlocks.MAGIC_BLOCK);
                     }).build());
 

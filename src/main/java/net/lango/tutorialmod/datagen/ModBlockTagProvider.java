@@ -25,5 +25,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider.Bloc
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DEEPSLATE_AMBER_ORE);
+
+        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.AMBER_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.AMBER_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.AMBER_WALL);
     }
 }

@@ -19,6 +19,8 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		//traslucent amber block
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AMBER_BLOCK, RenderLayer.getTranslucent());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AMBER_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AMBER_TRAPDOOR, RenderLayer.getCutout());
 
 		ModItemsGroups.registerItemGroups();
 		ModItems.registerModItems();

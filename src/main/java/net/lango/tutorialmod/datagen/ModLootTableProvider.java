@@ -30,6 +30,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.AMBER_BLOCK);
         addDrop(ModBlocks.AMBER_ORE, oreDrops(ModBlocks.AMBER_ORE, ModItems.AMBER));
         addDrop(ModBlocks.DEEPSLATE_AMBER_ORE, multipleOreDrops(ModBlocks.DEEPSLATE_AMBER_ORE, ModItems.AMBER, 1, 3));
+
+        addDrop(ModBlocks.AMBER_STAIRS);
+        addDrop(ModBlocks.AMBER_SLAB, slabDrops(ModBlocks.AMBER_SLAB));
+        addDrop(ModBlocks.AMBER_FENCE);
+        addDrop(ModBlocks.AMBER_WALL);
+
+        addDrop(ModBlocks.AMBER_FENCE_GATE);
+        addDrop(ModBlocks.AMBER_DOOR, doorDrops(ModBlocks.AMBER_DOOR));
+        addDrop(ModBlocks.AMBER_TRAPDOOR);
+
+        addDrop(ModBlocks.AMBER_PRESSURE_PLATE);
+        addDrop(ModBlocks.AMBER_BUTOON);
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

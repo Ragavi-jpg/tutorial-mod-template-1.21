@@ -13,6 +13,16 @@
   "item.tutorialmod.wood_dust": "Wood Dust",
 
   "block.tutorialmod.amber_block": "Block of Amber",
+  "block.tutorialmod.amber_stairs": "Amber Stairs",
+  "block.tutorialmod.amber_slab": "Amber Slab",
+  "block.tutorialmod.amber_wall": "Amber Wall",
+  "block.tutorialmod.amber_fence": "Amber Fence",
+  "block.tutorialmod.amber_trapdoor": "Amber Trapdoor",
+  "block.tutorialmod.amber_door": "Amber Door",
+  "block.tutorialmod.amber_fence_gate": "Amber Fence Gate",
+  "block.tutorialmod.amber_button": "Amber Button",
+  "block.tutorialmod.amber_pressure_plate": "Amber Pressure Plate",
+
   "block.tutorialmod.amber_ore": "Amber Ore",
   "block.tutorialmod.deepslate_amber_ore": "Deepslate Amber Ore",
 
