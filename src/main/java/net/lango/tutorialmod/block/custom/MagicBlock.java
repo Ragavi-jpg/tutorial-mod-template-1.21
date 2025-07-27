@@ -1,6 +1,7 @@
 package net.lango.tutorialmod.block.custom;
 
 import net.lango.tutorialmod.item.ModItems;
+import net.lango.tutorialmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -35,13 +36,17 @@ public class MagicBlock extends Block {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity item){
-            if (item.getStack().getItem() == ModItems.AMBER){
+            if (isValidItem(item.getStack())){
                 item.setStack(new ItemStack(Items.NETHERITE_INGOT, item.getStack().getCount()));
                 world.playSound(entity, pos, SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME, SoundCategory.BLOCKS, 1f, 1f);
             }
         }
 
         super.onSteppedOn(world, pos, state, entity);
+    }
+
+    private boolean isValidItem(ItemStack stack){
+        return stack.isIn(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
     @Override

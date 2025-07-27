@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "tutorialmod",
-	"version": "0.9",
+	"version": "0.10",
 	"name": "Tutorial Mod",
 	"description": "This is a potato",
 	"authors": [
