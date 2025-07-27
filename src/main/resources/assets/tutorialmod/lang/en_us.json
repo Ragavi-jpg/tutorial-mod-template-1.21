@@ -4,8 +4,11 @@
   "item.tutorialmod.amber": "Amber",
 
   "item.tutorialmod.chisel": "Chisel",
+  "tooltip.tutorialmod.chisel.shift_down": "This chisels blocks into briks ore smtg",
+  "tooltip.tutorialmod.chisel": "Press §eShift§r for more information...",
 
   "item.tutorialmod.golden_banana": "Golden Banana",
+  "tooltip.tutorialmod.golden_banana": "Delicious banana, can give §6Haste§r",
 
   "item.tutorialmod.wood_dust": "Wood Dust",
 
@@ -14,6 +17,9 @@
   "block.tutorialmod.deepslate_amber_ore": "Deepslate Amber Ore",
 
   "block.tutorialmod.magic_block": "Magic Block",
+  "tooltip.tutorialmod.magic_block.tooltip.1": "Very §5magical§r §oBLOCK§r",
+  "tooltip.tutorialmod.magic_block.tooltip.2": "§4ketchup§r",
+
 
   "itemgroup.tutorialmod.idk_items": "IDK Items",
   "itemgroup.tutorialmod.idk_blocks": "IDK Blocks"
