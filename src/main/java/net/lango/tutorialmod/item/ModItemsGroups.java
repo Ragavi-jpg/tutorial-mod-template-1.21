@@ -21,6 +21,10 @@ public class ModItemsGroups {
                         entries.add(ModItems.ROCK_POWDER);
 
                         entries.add(ModItems.CHISEL);
+
+                        entries.add(ModItems.GOLDEN_BANANA);
+
+                        entries.add(ModItems.WOOD_DUST);
                     }).build());
 
     public static final ItemGroup IDK_BLOCKS = Registry.register(Registries.ITEM_GROUP,

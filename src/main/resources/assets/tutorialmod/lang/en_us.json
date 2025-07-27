@@ -5,6 +5,10 @@
 
   "item.tutorialmod.chisel": "Chisel",
 
+  "item.tutorialmod.golden_banana": "Golden Banana",
+
+  "item.tutorialmod.wood_dust": "Wood Dust",
+
   "block.tutorialmod.amber_block": "Block of Amber",
   "block.tutorialmod.amber_ore": "Amber Ore",
   "block.tutorialmod.deepslate_amber_ore": "Deepslate Amber Ore",

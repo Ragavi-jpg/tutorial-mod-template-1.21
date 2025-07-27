@@ -17,6 +17,10 @@ public class ModItems {
 
     public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(42)));
 
+    public static final Item GOLDEN_BANANA = registerItem("golden_banana", new Item(new Item.Settings().food(ModFoodComponents.GOLDEN_BANANA)));
+
+    public static final Item WOOD_DUST = registerItem("wood_dust", new Item(new Item.Settings()));
+
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
     }

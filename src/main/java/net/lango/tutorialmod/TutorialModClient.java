@@ -8,7 +8,6 @@ import net.minecraft.client.render.RenderLayer;
 public class TutorialModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        //traslucent amber block
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AMBER_BLOCK, RenderLayer.getTranslucent());
+
     }
 }
