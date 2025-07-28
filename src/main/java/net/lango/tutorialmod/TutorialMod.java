@@ -22,7 +22,7 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		//traslucent amber block
 		List<Block> amberBlocks = List.of(ModBlocks.AMBER_BLOCK, ModBlocks.AMBER_STAIRS, ModBlocks.AMBER_SLAB, ModBlocks.AMBER_FENCE, ModBlocks.AMBER_WALL,
-				ModBlocks.AMBER_DOOR, ModBlocks.AMBER_TRAPDOOR, ModBlocks.AMBER_FENCE_GATE, ModBlocks.AMBER_BUTOON, ModBlocks.AMBER_PRESSURE_PLATE);
+				ModBlocks.AMBER_DOOR, ModBlocks.AMBER_TRAPDOOR, ModBlocks.AMBER_FENCE_GATE, ModBlocks.AMBER_BUTOON, ModBlocks.AMBER_PRESSURE_PLATE, ModBlocks.AMBER_LANTERN);
 		for(Block block :amberBlocks) {
 			BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getTranslucent());
 		}

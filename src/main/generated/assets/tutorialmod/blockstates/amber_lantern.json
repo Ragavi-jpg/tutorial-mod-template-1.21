@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "tutorialmod:block/amber_lantern"
+    },
+    "clicked=true": {
+      "model": "tutorialmod:block/amber_lantern_on"
+    }
+  }
+}

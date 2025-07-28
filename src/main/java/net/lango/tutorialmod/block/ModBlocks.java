@@ -2,6 +2,7 @@ package net.lango.tutorialmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lango.tutorialmod.TutorialMod;
+import net.lango.tutorialmod.block.custom.AmberLanternBlock;
 import net.lango.tutorialmod.block.custom.MagicBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -94,6 +95,15 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.CANDLE)
                     .mapColor(MapColor.ORANGE)
                     .nonOpaque()
+            ));
+
+    public static final Block AMBER_LANTERN = registerBlock("amber_lantern",
+            new AmberLanternBlock(AbstractBlock.Settings.create()
+                    .strength(0.5f)
+                    .luminance(state -> state.get(AmberLanternBlock.CLICKED) ? 10 : 0)
+                    .sounds(BlockSoundGroup.CANDLE)
+                    .nonOpaque()
+                    .mapColor(MapColor.ORANGE)
             ));
 
     //==================================================================================================

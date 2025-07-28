@@ -3,10 +3,10 @@ package net.lango.tutorialmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.lango.tutorialmod.block.ModBlocks;
+import net.lango.tutorialmod.block.custom.AmberLanternBlock;
 import net.lango.tutorialmod.item.ModItems;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.data.client.*;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -28,6 +28,11 @@ public class ModModelProvider extends FabricModelProvider {
         amberPool.fenceGate(ModBlocks.AMBER_FENCE_GATE);
         blockStateModelGenerator.registerDoor(ModBlocks.AMBER_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.AMBER_TRAPDOOR);
+
+        Identifier lampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.AMBER_LANTERN, blockStateModelGenerator.modelCollector);
+        Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.AMBER_LANTERN, "_on", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.AMBER_LANTERN)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(AmberLanternBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
         //=================================================================================================
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMBER_ORE);

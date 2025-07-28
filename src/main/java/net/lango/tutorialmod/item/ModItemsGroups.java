@@ -46,6 +46,8 @@ public class ModItemsGroups {
 
                         entries.add(ModBlocks.AMBER_PRESSURE_PLATE);
                         entries.add(ModBlocks.AMBER_BUTOON);
+
+                        entries.add(ModBlocks.AMBER_LANTERN);
                         //============================================
 
                         entries.add(ModBlocks.AMBER_ORE);
