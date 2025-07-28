@@ -15,6 +15,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        //=============================AMBER BLOCKS=======================================================
         BlockStateModelGenerator.BlockTexturePool amberPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.AMBER_BLOCK);
         amberPool.stairs(ModBlocks.AMBER_STAIRS);
         amberPool.slab(ModBlocks.AMBER_SLAB);
@@ -27,7 +28,7 @@ public class ModModelProvider extends FabricModelProvider {
         amberPool.fenceGate(ModBlocks.AMBER_FENCE_GATE);
         blockStateModelGenerator.registerDoor(ModBlocks.AMBER_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.AMBER_TRAPDOOR);
-
+        //=================================================================================================
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMBER_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_AMBER_ORE);
