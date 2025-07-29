@@ -9,6 +9,7 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
@@ -48,6 +49,66 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ROCK_POWDER, 2)
                 .input(ModItems.ROCK)
                 .criterion(hasItem(ModItems.ROCK), conditionsFromItem(ModItems.ROCK))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.AMBER_SWORD)
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" S ")
+                .input('A', ModItems.AMBER)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.AMBER_PICKAXE)
+                .pattern("AAA")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('A', ModItems.AMBER)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.AMBER_SHOVEL)
+                .pattern(" A ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('A', ModItems.AMBER)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.AMBER_AXE)
+                .pattern(" AA")
+                .pattern(" SA")
+                .pattern(" S ")
+                .input('A', ModItems.AMBER)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(recipeExporter, Identifier.of(TutorialMod.MOD_ID, "axe_right_craft"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.AMBER_AXE)
+                .pattern("AA ")
+                .pattern("AS ")
+                .pattern(" S ")
+                .input('A', ModItems.AMBER)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(recipeExporter, Identifier.of(TutorialMod.MOD_ID, "axe_left_craft"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.AMBER_HOE)
+                .pattern(" AA")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('A', ModItems.AMBER)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(recipeExporter);
     }
 }

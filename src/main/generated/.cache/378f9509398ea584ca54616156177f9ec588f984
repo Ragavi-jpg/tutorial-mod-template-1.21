@@ -1,5 +1,6 @@
-// 1.21	2025-07-28T12:17:09.6609713	Tutorial Mod/Block Loot Tables
+// 1.21	2025-07-29T13:13:06.1779033	Tutorial Mod/Block Loot Tables
 d74cabebc2b2b85ad07741a782d0d11187e3aa3e data\tutorialmod\loot_table\blocks\amber_wall.json
+cbb358d78cd57da58c907a35212d486fa6f68efa data\tutorialmod\loot_table\blocks\magic_block.json
 7d9ff84d9b05abf4db0a5d4e42f35efa970614a9 data\tutorialmod\loot_table\blocks\amber_pressure_plate.json
 1d661c6c64a704d758b1c85936f6e79414a8516b data\tutorialmod\loot_table\blocks\amber_slab.json
 c7008545d6e04fa7404dd3f576764777d67c21e3 data\tutorialmod\loot_table\blocks\amber_door.json

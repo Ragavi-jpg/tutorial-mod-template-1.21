@@ -3,9 +3,7 @@ package net.lango.tutorialmod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lango.tutorialmod.TutorialMod;
 import net.lango.tutorialmod.item.custom.ChiselItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -31,6 +29,23 @@ public class ModItems {
     });
 
     public static final Item WOOD_DUST = registerItem("wood_dust", new Item(new Item.Settings()));
+
+    public static final Item AMBER_SWORD = registerItem("amber_sword",
+            new SwordItem(ModToolMaterials.AMBER, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.AMBER, 3, -2.4f))));
+
+    public static final Item AMBER_PICKAXE = registerItem("amber_pickaxe",
+            new PickaxeItem(ModToolMaterials.AMBER, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.AMBER, 1, -2.0f))));
+
+    public static final Item AMBER_SHOVEL = registerItem("amber_shovel",
+            new ShovelItem(ModToolMaterials.AMBER, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.AMBER, 1.5f, -3.0f))));
+
+    public static final Item AMBER_AXE = registerItem("amber_axe",
+            new AxeItem(ModToolMaterials.AMBER, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.AMBER, 5, -3.2f))));
+
+    public static final Item AMBER_HOE = registerItem("amber_hoe",
+            new HoeItem(ModToolMaterials.AMBER, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.AMBER, 0, -1))));
+
+
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);

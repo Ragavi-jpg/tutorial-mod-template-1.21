@@ -3,6 +3,7 @@ package net.lango.tutorialmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.lango.tutorialmod.block.ModBlocks;
+import net.lango.tutorialmod.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -29,5 +30,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider.Bloc
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.AMBER_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.AMBER_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.AMBER_WALL);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.MAGIC_BLOCK);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_AMBER_TOOL)
+                .add(ModBlocks.MAGIC_BLOCK)
+                .addTag(BlockTags.NEEDS_STONE_TOOL);
     }
 }

@@ -44,6 +44,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.AMBER_BUTOON);
 
         addDrop(ModBlocks.AMBER_LANTERN);
+
+        addDrop(ModBlocks.MAGIC_BLOCK);
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

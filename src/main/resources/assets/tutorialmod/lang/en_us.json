@@ -12,6 +12,13 @@
 
   "item.tutorialmod.wood_dust": "Wood Dust",
 
+  "item.tutorialmod.amber_sword": "Amber Sword",
+  "item.tutorialmod.amber_pickaxe": "Amber Pickaxe",
+  "item.tutorialmod.amber_shovel": "Amber Shovel",
+  "item.tutorialmod.amber_axe": "Amber Axe",
+  "item.tutorialmod.amber_hoe": "Amber Hoe",
+
+
   "block.tutorialmod.amber_block": "Block of Amber",
   "block.tutorialmod.amber_stairs": "Amber Stairs",
   "block.tutorialmod.amber_slab": "Amber Slab",
