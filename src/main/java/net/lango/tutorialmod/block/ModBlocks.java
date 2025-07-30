@@ -1,13 +1,11 @@
 package net.lango.tutorialmod.block;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lango.tutorialmod.TutorialMod;
 import net.lango.tutorialmod.block.custom.AmberLanternBlock;
 import net.lango.tutorialmod.block.custom.MagicBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -41,7 +39,7 @@ public class ModBlocks {
                     .nonOpaque()
             ));
 
-    public static final Block AMBER_BUTOON = registerBlock("amber_button",
+    public static final Block AMBER_BUTTON = registerBlock("amber_button",
             new ButtonBlock(BlockSetType.IRON, 7, AbstractBlock.Settings.create()
                     .strength(0.5f)
                     .sounds(BlockSoundGroup.CANDLE)

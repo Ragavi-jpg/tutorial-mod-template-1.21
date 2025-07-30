@@ -11,7 +11,6 @@ import net.minecraft.item.Item;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
-import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
@@ -41,7 +40,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.AMBER_TRAPDOOR);
 
         addDrop(ModBlocks.AMBER_PRESSURE_PLATE);
-        addDrop(ModBlocks.AMBER_BUTOON);
+        addDrop(ModBlocks.AMBER_BUTTON);
 
         addDrop(ModBlocks.AMBER_LANTERN);
 

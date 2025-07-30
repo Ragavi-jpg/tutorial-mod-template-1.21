@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": {
+      "item": "tutorialmod:amber"
+    },
+    "B": {
+      "item": "tutorialmod:amber_block"
+    }
+  },
+  "pattern": [
+    "   ",
+    "BAB",
+    "BAB"
+  ],
+  "result": {
+    "count": 6,
+    "id": "tutorialmod:amber_wall"
+  }
+}

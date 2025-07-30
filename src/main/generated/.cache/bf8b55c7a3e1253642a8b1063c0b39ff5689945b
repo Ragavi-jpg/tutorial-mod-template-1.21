@@ -1,4 +1,4 @@
-// 1.21	2025-07-29T13:13:06.1799035	Tutorial Mod/Model Definitions
+// 1.21	2025-07-30T13:52:07.0656236	Tutorial Mod/Model Definitions
 c9d9b0805698bf423405c33bd7b5f168ea6cf876 assets\tutorialmod\blockstates\amber_button.json
 efb25def320ca913c33cf8e758a4aca644083652 assets\tutorialmod\models\item\deepslate_amber_ore.json
 82e883736bb752c4c432e609e805915cf5403c00 assets\tutorialmod\models\block\amber_trapdoor_open.json
@@ -34,6 +34,7 @@ a1c603061fabf84eca802508860d547b821ef549 assets\tutorialmod\models\block\amber_t
 96f431ff76a9eab92ad4b0983c79c94ffa706a4a assets\tutorialmod\models\item\amber_ore.json
 f3f94731f84f8fdc13816c6b209cf7d965cf8ab5 assets\tutorialmod\blockstates\amber_pressure_plate.json
 4017c9c31ecf1ab5f59d0b5d85c07bc73975f44c assets\tutorialmod\models\block\amber_wall_inventory.json
+dda516b4938e0eaadea3e870f4400264727af881 assets\tutorialmod\models\item\amber_hammer.json
 a5628f2bf9861f439d6dfb7677e8e2c8b2dd8344 assets\tutorialmod\blockstates\amber_wall.json
 7f8c33ccc3b6d9b493302185981a3aefacae00cd assets\tutorialmod\models\block\amber_fence_post.json
 074f65b3e3bc6245163756583b022e28fc107f79 assets\tutorialmod\models\item\amber_axe.json
@@ -45,8 +46,8 @@ e95f7a3f68addf38c83054d819307d8e2536fe8d assets\tutorialmod\models\item\amber_la
 405378375c6bbc88658c82e7193ec87388f2bfd5 assets\tutorialmod\models\item\amber_shovel.json
 a50afad3c0adf3f1b53312910caba47605c6b56d assets\tutorialmod\blockstates\amber_door.json
 329e63b228d58b4771641e892d76770449ed6b64 assets\tutorialmod\models\item\amber_door.json
-5f0e454ed414e74bb3b358639b1313ed322170dd assets\tutorialmod\models\block\amber_button.json
 71667d4c356b2a6591a0e59ba57e92dfce0b9e2d assets\tutorialmod\models\block\amber_door_bottom_left_open.json
+5f0e454ed414e74bb3b358639b1313ed322170dd assets\tutorialmod\models\block\amber_button.json
 497adb06fb2f16037e1b3c0ff9e81a83a1efd345 assets\tutorialmod\models\block\amber_door_top_right.json
 e78761754abc790fe1b4abf0f503fc024f4983e1 assets\tutorialmod\models\block\amber_wall_side.json
 cbb5e6dd85f7bd34682d5ea611579512459594c8 assets\tutorialmod\models\block\amber_lantern_on.json

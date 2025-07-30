@@ -3,6 +3,7 @@ package net.lango.tutorialmod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lango.tutorialmod.TutorialMod;
 import net.lango.tutorialmod.item.custom.ChiselItem;
+import net.lango.tutorialmod.item.custom.HammerItem;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
@@ -44,6 +45,9 @@ public class ModItems {
 
     public static final Item AMBER_HOE = registerItem("amber_hoe",
             new HoeItem(ModToolMaterials.AMBER, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.AMBER, 0, -1))));
+
+    public static final Item AMBER_HAMMER = registerItem("amber_hammer",
+            new HammerItem(ModToolMaterials.AMBER, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.AMBER, 7, -3.4f))));
 
 
 

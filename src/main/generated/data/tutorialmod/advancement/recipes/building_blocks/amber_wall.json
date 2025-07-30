@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_amber": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:amber"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorialmod:amber_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_amber"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorialmod:amber_wall"
+    ]
+  }
+}

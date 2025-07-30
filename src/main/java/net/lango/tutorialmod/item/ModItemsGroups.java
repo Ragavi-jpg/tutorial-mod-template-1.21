@@ -31,6 +31,7 @@ public class ModItemsGroups {
                         entries.add(ModItems.AMBER_SHOVEL);
                         entries.add(ModItems.AMBER_AXE);
                         entries.add(ModItems.AMBER_HOE);
+                        entries.add(ModItems.AMBER_HAMMER);
                     }).build());
 
     public static final ItemGroup IDK_BLOCKS = Registry.register(Registries.ITEM_GROUP,
@@ -51,7 +52,7 @@ public class ModItemsGroups {
                         entries.add(ModBlocks.AMBER_FENCE_GATE);
 
                         entries.add(ModBlocks.AMBER_PRESSURE_PLATE);
-                        entries.add(ModBlocks.AMBER_BUTOON);
+                        entries.add(ModBlocks.AMBER_BUTTON);
 
                         entries.add(ModBlocks.AMBER_LANTERN);
                         //============================================

@@ -22,7 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
         amberPool.wall(ModBlocks.AMBER_WALL);
         amberPool.fence(ModBlocks.AMBER_FENCE);
 
-        amberPool.button(ModBlocks.AMBER_BUTOON);
+        amberPool.button(ModBlocks.AMBER_BUTTON);
         amberPool.pressurePlate(ModBlocks.AMBER_PRESSURE_PLATE);
 
         amberPool.fenceGate(ModBlocks.AMBER_FENCE_GATE);
@@ -58,5 +58,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.AMBER_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AMBER_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AMBER_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AMBER_HAMMER, Models.HANDHELD);
     }
 }
